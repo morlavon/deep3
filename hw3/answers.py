@@ -206,13 +206,13 @@ def part3_gan_hyperparams():
     hypers['batch_size'] = 16
     hypers['z_dim'] = 50
     hypers['data_label'] = 0
-    hypers['label_noise'] = 0.07
+    hypers['label_noise'] = 0.15
     hypers['discriminator_optimizer'] = dict(type='Adam',
-                                             lr=20e-5,
+                                             lr=12e-5,
                                              betas=(0.5, 0.999)
                                              )
     hypers['generator_optimizer'] = dict(type='Adam',
-                                         lr=33e-5,
+                                         lr=30e-5,
                                          betas=(0.5, 0.999)
                                          )
     # ========================
